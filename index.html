@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <title>Modern UI Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Modern UI Login form</h1>
+
+    <section class="stage">
+      <div class="login-card">
+        <h2>LOGIN</h2>
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <input id="username" name="username" type="text"
+              placeholder="Username" autocomplete="username" required>
+          </div>
+          <div class="field">
+            <input id="password" name="password" type="password"
+              placeholder="Password" autocomplete="current-password" required>
+            <button class="password-toggle" id="passwordToggle" type="button"
+              aria-label="Show password" title="Show password">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6S2 12 2 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+          <button class="submit-button" type="submit">ACCESS SYSTEM</button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+        <p class="signup">Not user? <a href="#" id="createAccount">Create account</a></p>
+      </div>
+    </section>
+
+    <section class="source-panel" aria-label="CSS source preview">
+      <div class="source-title">Comment "Login" for code</div>
+      <pre><code><span class="selector">.login-card</span> {
+  <span class="property">width</span>: <span class="value">420px</span>;
+  <span class="property">padding</span>: <span class="value">30px</span>;
+  <span class="property">background</span>: <span class="value">#111</span>;
+  <span class="property">border-radius</span>: <span class="value">12px</span>;
+  <span class="property">box-shadow</span>: <span class="value">0 0 25px rgba(0,0,0,.5)</span>;
+}
+
+<span class="selector">.submit-button</span> {
+  <span class="property">background</span>: <span class="value">linear-gradient(90deg, #00e5ff, #7000ff)</span>;
+  <span class="property">border</span>: <span class="value">none</span>;
+  <span class="property">border-radius</span>: <span class="value">30px</span>;
+  <span class="property">color</span>: <span class="value">white</span>;
+}</code></pre>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
